@@ -1,0 +1,7 @@
+# Bundle patch: one row for dsh-temp-full-access.
+# The host half owns the timer and the permission write; the client half owns
+# the settings section and the toast. Both halves are needed, so this patch
+# mounts the package once and lets dsh.client attach the browser half.
+- insert:
+    - id: temp-full-access
+      name: 'dsh-temp-full-access'

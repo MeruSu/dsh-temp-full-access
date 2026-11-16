@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Temporary Full Access",
+    "description": "Switches a session to Full access only for a while: when the timer runs out the session goes back to Workspace Write."
+  }
+}

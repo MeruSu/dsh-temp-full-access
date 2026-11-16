@@ -1,0 +1,52 @@
+{
+  "name": "dsh-temp-full-access",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Temporarily grants full access, then puts the session back to workspace-write on a timer.",
+  "license": "MIT",
+  "author": {
+    "name": "MeruSu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeruSu/dsh-temp-full-access.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "permission",
+    "sandbox"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "DEVELOPMENT-LOG.md",
+    "LICENSE",
+    "locale",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "icon": "./icon.svg"
+}
