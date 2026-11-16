@@ -1,6 +1,6 @@
 {
   "name": "dsh-temp-full-access",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Temporarily grants full access, then puts the session back to workspace-write on a timer.",
   "license": "MIT",

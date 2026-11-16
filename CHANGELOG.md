@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.1.1 — 2026-11-17
+
+### Fixed
+
+- **The client half no longer declares anything at module scope.** The harness
+  concatenates every plugin's client half into a single module, so one bare
+  `const NS` there takes the whole page down with
+  `Uncaught SyntaxError: Identifier 'NS' has already been declared` and every
+  plugin reports `failed`. `client.js` is now one
+  `window.__ModuleLoader__.load({ id, factory })` call with nothing outside it.
+- Settings write-back goes through
+  `GET /temp-full-access/config?enabled=&minutes=` instead of a POST body: the
+  host web server answers `GET`/`HEAD` only and returns 405 for anything else,
+  which is why the delay used to stay at its default no matter what the page
+  sent.
+- The client half takes `slots` and `locale` with `ctx.get(...)` plus a 250 ms
+  retry instead of touching `ctx.slots` / `ctx.locale` directly — property
+  access throws `cannot get property "locale" without inject` when the client
+  half boots before those services exist, which is exactly what happens in a
+  small profile.
+
 ## 0.1.0 — 2026-11-17
 
 ### Added
