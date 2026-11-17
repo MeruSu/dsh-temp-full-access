@@ -1,6 +1,6 @@
 {
   "name": "dsh-temp-full-access",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "Temporarily grants full access, then puts the session back to workspace-write on a timer.",
   "license": "MIT",
@@ -10,6 +10,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MeruSu/dsh-temp-full-access.git"
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0-0"
   },
   "keywords": [
     "dsh",

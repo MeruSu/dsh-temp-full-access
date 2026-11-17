@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2 — 2026-11-17
+
+**Packaging only: `engines.dsh`.** This release adds
+`"engines": { "dsh": ">=0.2.2-rc.1 <0.3.0-0" }` so the host — and any directory
+that lists the plugin — can check up front that a compatible DSH is installed.
+Nothing else changed: no behaviour, no timer logic, no settings. If you already
+run 0.1.1, installing 0.1.2 looks and acts exactly the same.
+
 ## 0.1.1 — 2026-11-17
 
 ### Fixed
