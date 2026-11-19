@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Temporary full access">
-  <rect x="6" y="6" width="52" height="52" rx="14" fill="#2f7d4f"/>
-  <path d="M32 14a18 18 0 1 0 17.9 20.6l-4.2-.7A13.7 13.7 0 1 1 32 18.3z" fill="#ffffff" opacity="0.92"/>
-  <path d="M32 20v13l9 5" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="32" cy="33" r="2.6" fill="#ffffff"/>
-</svg>

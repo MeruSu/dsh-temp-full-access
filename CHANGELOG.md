@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 — 2026-11-19
+
+**Icon only: the plugin icon is now a PNG (meru family).**
+
 ## 0.1.2 — 2026-11-17
 
 **Packaging only: `engines.dsh`.** This release adds
